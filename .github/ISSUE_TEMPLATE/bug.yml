@@ -1,0 +1,63 @@
+name: Bug report
+description: Something broken. One bug per issue.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One bug per issue. Evidence is tests, a screenshot, or a command that proves it — not file lists or line numbers.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One-sentence statement of what is broken.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Shortest path. Commands or clicks. If you cannot repro, say so.
+      placeholder: |
+        1. Open the model
+        2. Export CSV
+        3. Empty property sets are missing
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: What should happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+      description: What happens instead.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who hits it, how often, what it costs.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Tests, a screenshot, or a command that proves it. Not file lists or line numbers.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: My attached files and text contain no confidential or client-identifying data.
+          required: true

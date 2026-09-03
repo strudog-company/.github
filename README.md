@@ -6,7 +6,7 @@ Free only applies org defaults from a public `.github` repo.
 Org-wide issue forms and PR template. GitHub applies these to every
 `Infra-Endgame` repo that does not define its own.
 
-Issue forms: `.github/ISSUE_TEMPLATE/`
+Issue forms: Bug report, Feature, Decision (`.github/ISSUE_TEMPLATE/`)
 PR template: `.github/PULL_REQUEST_TEMPLATE.md`
 
 Do not copy these files into product repos. A local `ISSUE_TEMPLATE`
